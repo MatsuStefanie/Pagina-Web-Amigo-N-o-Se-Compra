@@ -37,7 +37,8 @@
     .redes-sociais {
         padding: 10px;
         height: 40px;
-        width: 20%;
+        width: 23%;
+        max-width: 200px;
         float: right;
     }
     
@@ -46,13 +47,14 @@
         padding: 0px;
         margin: 0px;
         max-height: 40px;
-        max-width: 120px;
+        max-width: 180px;
     }
     
     .redes-sociais li {
         padding: 0.5px;
         display: inline-block;
         margin: 0px;
+        margin-left: 10px;
     }
     
     .redes-sociais img {
@@ -87,6 +89,15 @@
         list-style-type: none;
         padding: 0px;
         margin: 0px;
+        color: #2b4b6b
+    }
+    
+    .menu ul li a:hover {
+        color: #aa33aa;
+    }
+    
+    .menu ul li:hover {
+        border-bottom: 3px solid #aa33aa
     }
     
     .menu li {
@@ -122,4 +133,66 @@
     .col-100-main-urls {
         width: 100%;
         padding: 10px;
+    }
+    
+    button.slick-prev {
+        font-size: 0px;
+        border: none;
+        width: 45px;
+        height: 50px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 99;
+        background-image: url('../img/de-volta.png');
+        left: 5%;
+        top: 40%;
+    }
+    
+    button.slick-next {
+        font-size: 0px;
+        border: none;
+        width: 45px;
+        height: 50px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 99;
+        background-image: url('../img/proximo.png');
+        right: 5%;
+        top: 40%;
+    }
+    
+    .slick-list {
+        width: 100% !important;
+    }
+    
+    .slick-initialized {
+        overflow: hidden;
+    }
+    
+    .slick-dots li button {
+        font-size: 0px;
+        border: 4px solid #8b8b8b5c;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .slick-dots {
+        margin: 0 auto;
+        width: 10%;
+        position: absolute;
+        left: 45%;
+        top: 90%;
+        padding: 0px;
+    }
+    
+    li.slick-active button {
+        background-color: #5a174e;
+    }
+    
+    .slick-dots li {
+        display: inline-block;
+        padding: 5px;
     }
